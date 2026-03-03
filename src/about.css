@@ -1,0 +1,405 @@
+/* about.css */
+.about-page-wrapper {
+    width: 100%;
+    padding: 4rem 2rem;
+    z-index: 10;
+    position: relative;
+}
+
+.about-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.ap-section {
+    margin-bottom: 6rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.ap-title {
+    font-size: 4.5rem;
+    color: #a855f7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 0.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+.ap-subtitle {
+    font-size: 1.5rem;
+    color: #f8fafc;
+    font-weight: 500;
+}
+
+.ap-section-title {
+    font-size: 3rem;
+    color: #a855f7;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+}
+
+.ap-mission-text {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ap-mission-text p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* Diff Grid */
+.ap-diff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.ap-diff-card {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: left;
+}
+
+.ap-diff-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(168, 85, 247, 0.8);
+}
+
+.ap-diff-icon {
+    color: #a855f7;
+    margin-bottom: 1.5rem;
+    width: 36px;
+    height: 36px;
+}
+
+.ap-diff-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.ap-diff-card p {
+    color: #94a3b8;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Story */
+.ap-story-container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 24px;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ap-story-image {
+    flex: 0.9;
+    min-width: 300px;
+    transform: translateX(-1.5rem);
+    /* Move it a little bit to the left */
+}
+
+.ap-story-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    /* Make it round corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ap-story-text {
+    flex: 1.1;
+    padding: 1rem 1rem 1rem 0;
+    text-align: left;
+}
+
+.ap-story-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+/* Guide */
+.ap-guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.ap-guide-card {
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    text-align: left;
+}
+
+.ap-guide-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.ap-guide-info {
+    padding: 2rem;
+}
+
+.ap-guide-info h4 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.ap-guide-title {
+    display: block;
+    color: #a855f7;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    line-height: 1.4;
+}
+
+.ap-guide-info p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Carousel */
+.ap-team-carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.carousel-nav-btn {
+    background: rgba(168, 85, 247, 0.1);
+    color: #a855f7;
+    border: 1px solid rgba(168, 85, 247, 0.4);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-nav-btn:hover {
+    background: #a855f7;
+    color: #fff;
+}
+
+.ap-team-sliding-window {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    justify-content: center;
+}
+
+.ap-team-card {
+    flex: 1;
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ap-team-img-wrapper {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #a855f7;
+    padding: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.ap-team-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ap-team-card h4 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.ap-team-card span {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.carousel-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-dots .dot.active {
+    background: #a855f7;
+}
+
+@media (max-width: 900px) {
+
+    /* Scale headers down to fit horizontally */
+    .ap-title {
+        font-size: 2.2rem;
+    }
+
+    .ap-subtitle {
+        font-size: 1rem;
+    }
+
+    .ap-section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Our Story: Keep horizontal, but scale down */
+    .ap-story-container {
+        gap: 1rem;
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+
+    .ap-story-image {
+        min-width: 120px;
+        transform: translateX(0);
+        /* Remove the negative margin for tight mobile spaces */
+    }
+
+    .ap-story-image img {
+        min-height: 200px;
+        border-radius: 12px;
+    }
+
+    .ap-story-text {
+        padding: 0;
+    }
+
+    .ap-story-text p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 0.8rem;
+    }
+
+    /* Team Carousel: Keep horizontal, scale down cards */
+    .ap-team-sliding-window {
+        gap: 1rem;
+    }
+
+    .ap-team-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .ap-team-img-wrapper {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+        border-width: 2px;
+    }
+
+    .ap-team-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .ap-team-card span {
+        font-size: 0.75rem;
+    }
+
+    .carousel-nav-btn {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Extra scaling for standard phone widths to ensure horizontal fit */
+    .ap-title {
+        font-size: 1.8rem;
+    }
+
+    .ap-story-image {
+        min-width: 100px;
+    }
+
+    .ap-story-image img {
+        min-height: 150px;
+    }
+
+    .ap-story-text p {
+        font-size: 0.75rem;
+    }
+
+    .ap-team-img-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ap-team-card {
+        padding: 1rem 0.5rem;
+    }
+
+    .ap-team-card h4 {
+        font-size: 0.9rem;
+    }
+
+    .ap-team-card span {
+        font-size: 0.65rem;
+    }
+}
