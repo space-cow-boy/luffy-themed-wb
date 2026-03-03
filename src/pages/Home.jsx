@@ -417,6 +417,84 @@ function Home() {
                     </div>
                 </div>
             </section>
+
+            {/* ===== Manga Panel Mosaic Scroller ===== */}
+            {(() => {
+                const row1 = [
+                    '/assets/MangaPanels/Luffy.jpg',
+                    '/assets/MangaPanels/one piece manga.jpg',
+                    '/assets/MangaPanels/download.jpg',
+                    '/assets/MangaPanels/download (1).jpg',
+                    '/assets/MangaPanels/download (2).jpg',
+                    '/assets/MangaPanels/download (3).jpg',
+                    '/assets/MangaPanels/download (4).jpg',
+                    '/assets/MangaPanels/26ff1d71915a78bd30b6d9b24bb6c994.jpg',
+                    '/assets/MangaPanels/gear2.webp',
+                    '/assets/MangaPanels/50d48b2918f1cb1459bd32c7a9666ede.webp',
+                    '/assets/MangaPanels/82ff9dc98dcd492fd7024f808d6f6436.webp',
+                ];
+                const row2 = [
+                    '/assets/MangaPanels/download (5).jpg',
+                    '/assets/MangaPanels/download (6).jpg',
+                    '/assets/MangaPanels/download (7).jpg',
+                    '/assets/MangaPanels/download (8).jpg',
+                    '/assets/MangaPanels/download (9).jpg',
+                    '/assets/MangaPanels/download (10).jpg',
+                    '/assets/MangaPanels/p1.jpg',
+                    '/assets/MangaPanels/one piece- monkey d_ luffy.jpg',
+                    '/assets/MangaPanels/f0c83cbbb913934694c5990734c6e0a9.webp',
+                    '/assets/MangaPanels/loki_first_appearance.webp',
+                    '/assets/MangaPanels/luffy_gear_5.webp',
+                ];
+                const row3 = [
+                    '/assets/MangaPanels/download (11).jpg',
+                    '/assets/MangaPanels/download (12).jpg',
+                    '/assets/MangaPanels/download (13).jpg',
+                    '/assets/MangaPanels/download (14).jpg',
+                    '/assets/MangaPanels/onepiece __ manga __ story __ nakama __ pirates __ anime __ king of pirates __ story __ chapter __.jpg',
+                    '/assets/MangaPanels/★.jpg',
+                    '/assets/MangaPanels/Screenshot 2026-03-02 162330.png',
+                    '/assets/MangaPanels/Screenshot 2026-03-02 163205.png',
+                    '/assets/MangaPanels/whats-your-favorite-one-piece-manga-panel-v0-pfvg890ojfbf1.webp',
+                    '/assets/MangaPanels/whitebeard_vs_marine.webp',
+                    '/assets/MangaPanels/wp11456620.webp',
+                    '/assets/MangaPanels/drop-the-coolest-looking-op-manga-panel-artistically-v0-r37rr45eee4f1.webp',
+                ];
+
+                return (
+                    <section className="manga-mosaic-section">
+                        <div className="manga-mosaic-overlay" />
+                        <div className="manga-mosaic-inner">
+                            {/* Row 1 */}
+                            <div className="manga-row">
+                                <div className="manga-track">
+                                    {[...row1, ...row1, ...row1].map((src, i) => (
+                                        <img key={`r1-${i}`} src={src} alt="" className="manga-panel" />
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Row 2 */}
+                            <div className="manga-row">
+                                <div className="manga-track manga-track-fast">
+                                    {[...row2, ...row2, ...row2].map((src, i) => (
+                                        <img key={`r2-${i}`} src={src} alt="" className="manga-panel" />
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Row 3 */}
+                            <div className="manga-row">
+                                <div className="manga-track manga-track-slow">
+                                    {[...row3, ...row3, ...row3].map((src, i) => (
+                                        <img key={`r3-${i}`} src={src} alt="" className="manga-panel" />
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                );
+            })()}
         </>
     );
 }

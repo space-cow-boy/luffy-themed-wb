@@ -1488,3 +1488,87 @@ button {
     object-position: center 5% !important;
   }
 }
+
+/* ===================== MANGA MOSAIC SCROLLER ===================== */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333333%);
+  }
+}
+
+.manga-mosaic-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Dark tinted overlay sits on top of the panels */
+.manga-mosaic-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.manga-mosaic-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px 0;
+}
+
+/* Each row clips its overflowing track */
+.manga-row {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* The scrolling container — holds 3 copies for perfect seamless loop */
+.manga-track {
+  display: flex;
+  gap: 8px;
+  width: max-content;
+  animation: scrollLeft 45s linear infinite;
+  will-change: transform;
+}
+
+/* Slightly different speeds per row for parallax depth */
+.manga-track-fast {
+  animation-duration: 35s;
+}
+
+.manga-track-slow {
+  animation-duration: 55s;
+}
+
+/* Each panel image */
+.manga-panel {
+  height: 120px;
+  width: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: grayscale(30%) contrast(1.1);
+  display: block;
+}
+
+
+
+/* Mobile: reduce height */
+@media (max-width: 768px) {
+  .manga-panel {
+    height: 75px;
+  }
+
+  .manga-mosaic-inner {
+    gap: 4px;
+  }
+}
