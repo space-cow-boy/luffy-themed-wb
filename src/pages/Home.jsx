@@ -31,7 +31,7 @@ function Home() {
         { id: 4, image: '/assets/track cards/tc4.png', title: 'Open Innovation', description: 'Revolutionize finance with blockchain and decentralized systems.', color: '#1b1b2f', imgPosition: 'center top' },
         { id: 3, image: '/assets/track cards/tc2.png', title: 'IoT & Hardware', description: 'Bridge the physical and digital worlds through smart connected devices.', color: '#16213e', imgPosition: 'top center' },
         { id: 5, image: '/assets/track cards/tc5.png', title: 'Cybersecurity', description: 'Defend the digital frontier with innovative security solutions.', color: '#162032', imgPosition: 'top center' },
-        { id: 2, image: '/assets/track cards/tc3.png', title: 'Cloud', description: 'Create powerful web and mobile applications for the modern era.', color: '#5a2d00', imgPosition: 'top center' },
+        { id: 2, image: '/assets/track cards/tc3.png', title: 'Cloud Computing', description: 'Create powerful web and mobile applications for the modern era.', color: '#5a2d00', imgPosition: 'top center' },
     ];
 
     // Carousel State

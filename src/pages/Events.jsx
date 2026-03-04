@@ -67,8 +67,8 @@ const Events = () => {
                         <div className="ap-diff-card" style={{ background: 'rgba(15, 23, 42, 0.95)', border: '1px solid rgba(255, 255, 255, 0.1)', overflow: 'hidden', padding: 0, backdropFilter: 'blur(10px)' }}>
                             <img src="/assets/smash%20karts.webp" alt="Smash carts" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                             <div style={{ padding: '2rem' }}>
-                                <h4 style={{ color: '#ffb300', fontSize: '1.5rem', marginBottom: '1rem', fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '1px' }}>Smash carts</h4>
-                                <p style={{ color: '#e2e8f0' }}>Race to the finish line in our autonomous vehicle coding competition. Program your cart to navigate obstacles and secure victory.</p>
+                                <h4 style={{ color: '#ffb300', fontSize: '1.5rem', marginBottom: '1rem', fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '1px' }}>Smash Karts</h4>
+                                <p style={{ color: '#e2e8f0' }}>Jump into the chaotic arena! Smash Karts is a fast-paced 3D multiplayer kart battle game where you grab crazy weapons, blow up opponents, and fight for survival.</p>
                             </div>
                         </div>
                     </div>
