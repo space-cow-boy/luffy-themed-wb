@@ -100,7 +100,7 @@ function App() {
             backgroundColor: visibility ? '#10b981' : '#ef4444', color: 'white'
           }}
         >
-          {visibility ? <Play size={18} /> : <Pause size={18} />}
+          {visibility ? <Pause size={20} /> : <Play size={20} />}
           LEADERBOARD IS: {visibility ? 'ON' : 'OFF'}
         </button>
       </header>
