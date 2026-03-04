@@ -108,7 +108,7 @@ function Home() {
             {/* Intro Section */}
             <section id="home" className="about-section slide-up" style={{ marginTop: '2rem' }}>
                 <div className="about-text" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)', minWidth: 0 }}>
-                    <h1 className="about-title" style={{ fontSize: 'clamp(3rem, 6vw, 5rem)', color: '#ffffff', marginBottom: '0', wordBreak: 'break-word', lineHeight: '1.1' }}>HACK-<span className="op-font">O</span>-HOLIC 4.0:</h1>
+                    <h1 className="about-title" style={{ fontSize: 'clamp(3rem, 6vw, 5rem)', color: '#ffffff', marginBottom: '0', wordBreak: 'break-word', lineHeight: '1.1' }}>HACK-<span className="op-font">O</span>-HOLIC 4.0</h1>
                     <h2 className="about-title-secondary" style={{ fontSize: 'clamp(2.2rem, 4.5vw, 4rem)', color: '#ffffff', borderBottom: 'none', paddingBottom: 0, wordBreak: 'break-word' }}>P<span className="op-font">I</span>RATE K<span className="op-font">I</span>NG'S CHALLENGE</h2>
 
                     <p className="about-desc" style={{ fontSize: '1.5rem', color: '#e2e8f0', marginTop: '1.5rem' }}>
