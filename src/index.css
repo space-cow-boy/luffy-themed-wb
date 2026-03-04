@@ -82,6 +82,12 @@ button {
   object-fit: cover;
 }
 
+@media (max-width: 900px) {
+  .hero-video {
+    object-fit: contain;
+  }
+}
+
 .skip-btn {
   position: absolute;
   bottom: 2rem;
@@ -209,7 +215,7 @@ button {
 }
 
 .bg-about {
-  background-image: url('/assets/4.png');
+  background-image: url('/assets/bright-bg.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1409,11 +1415,11 @@ button {
 
 /* Event Flow Section Backgrounds */
 .new-section-4 {
-  background-image: url('/assets/4.png');
+  background-image: url('/assets/bright-bg.png');
 }
 
 .new-section-6 {
-  background-image: url('/assets/6.png');
+  background-image: url('/assets/gallery-bg.png');
 }
 
 /* Event Flow Timelines */
@@ -1537,7 +1543,7 @@ button {
 
 @media (max-width: 900px) {
   .new-section-4 {
-    background-image: url('/assets/mobile%204.png');
+    background-image: url('/assets/mobile%20bright-bg.png');
   }
 
   .event-flow-wrapper {
