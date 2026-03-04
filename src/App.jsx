@@ -69,7 +69,7 @@ function App() {
                 className="hero-video"
                 onEnded={handleVideoEnd}
               >
-                <source src="/assets/Water_7_Arc_One_Piece_Manga_Animation_720P.mp4" type="video/mp4" />
+                <source src="/assets/op intro.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               <button className="skip-btn" onClick={skipVideo}>Skip Intro</button>
