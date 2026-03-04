@@ -269,7 +269,7 @@ function Home() {
                     <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: '180px', background: 'linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%)', zIndex: 5, pointerEvents: 'none' }}></div>
                 </div>
                 <div className="event-details-content">
-                    <h2 className="event-details-title"><span className="op-font">E</span>vent <span className="op-font">D</span>etails</h2>
+                    <h2 className="event-details-title">GR<span className="op-font">A</span>ND L<span className="op-font">I</span>NE G<span className="op-font">U</span>IDELINES</h2>
                     {/* Desktop Cards - PNG images with text */}
                     <div className="event-cards-grid desktop-cards">
                         <div className="event-card-wrapper card-luffy">
