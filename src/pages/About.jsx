@@ -108,7 +108,7 @@ function About() {
             position: 'relative',
             paddingBottom: '4rem'
         }}>
-            {/* Dark overlay to match the screenshots layout against the bright 4.png background */}
+            {/* Dark overlay to match the screenshots layout against the bright bright-bg.png background */}
             <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.65)', backdropFilter: 'blur(3px)', zIndex: 0 }}></div>
 
             <div className="about-page-wrapper">

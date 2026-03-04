@@ -28,7 +28,7 @@ function Home() {
 
     const tracks = [
         { id: 1, image: '/assets/track cards/tc1.png', title: 'AI & Machine Learning', description: 'Build intelligent solutions using cutting-edge AI and ML technologies.', color: '#1a1a2e', imgPosition: 'top center' },
-        { id: 4, image: '/assets/track cards/tc4.png', title: 'FinTech & Blockchain', description: 'Revolutionize finance with blockchain and decentralized systems.', color: '#1b1b2f', imgPosition: 'center top' },
+        { id: 4, image: '/assets/track cards/tcbright-bg.png', title: 'FinTech & Blockchain', description: 'Revolutionize finance with blockchain and decentralized systems.', color: '#1b1b2f', imgPosition: 'center top' },
         { id: 3, image: '/assets/track cards/tc2.png', title: 'IoT & Hardware', description: 'Bridge the physical and digital worlds through smart connected devices.', color: '#16213e', imgPosition: 'top center' },
         { id: 5, image: '/assets/track cards/tc5.png', title: 'Cybersecurity', description: 'Defend the digital frontier with innovative security solutions.', color: '#162032', imgPosition: 'top center' },
         { id: 2, image: '/assets/track cards/tc3.png', title: 'Web & App Dev', description: 'Create powerful web and mobile applications for the modern era.', color: '#5a2d00', imgPosition: 'top center' },
@@ -37,10 +37,10 @@ function Home() {
     // Carousel State
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const carouselImages = [
-        '/assets/Image1.JPG',
-        '/assets/Image2.JPG',
-        '/assets/Image3.JPG',
-        '/assets/Image4.JPG'
+        '/assets/carousel-image-1.jpg',
+        '/assets/carousel-image-home-artwork-bg.jpg',
+        '/assets/carousel-image-3.jpg',
+        '/assets/carousel-image-4.jpg'
     ];
 
     // Auto-advance Carousel
@@ -51,12 +51,12 @@ function Home() {
         return () => clearInterval(slideInterval);
     }, [carouselImages.length]);
 
-    // Gallery State (6.png section)
+    // Gallery State (gallery-bg.png section)
     const [galleryIndex, setGalleryIndex] = useState(0);
     const galleryImages = [
         '/assets/gallery pictures/g1.jpeg',
         '/assets/gallery pictures/g2.jpeg',
-        '/assets/gallery pictures/g3.jpeg',
+        '/assets/gallery pictures/ggoing-merry-bg.jpeg',
         '/assets/gallery pictures/g4.jpeg',
         '/assets/gallery pictures/g5.jpeg',
         '/assets/gallery pictures/g6.jpeg',
@@ -168,10 +168,10 @@ function Home() {
                 </div>
             </section>
 
-            {/* 2.jpg Page Layout Section */}
+            {/* home-artwork-bg.jpg Page Layout Section */}
             <section style={{ width: '100%', backgroundColor: '#0f172a', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
                 <div className="thematic-bg-container" style={{ width: '100%', position: 'relative' }}>
-                    <img src="/assets/2.jpg" alt="One Piece Artwork" className="thematic-bg-img" />
+                    <img src="/assets/home-artwork-bg.jpg" alt="One Piece Artwork" className="thematic-bg-img" />
                     {/* Top Fade Transition */}
                     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '200px', background: 'linear-gradient(180deg, rgba(31,34,40,1) 0%, rgba(31,34,40,0) 100%)' }}></div>
                     {/* Subtle Red Thematic Overlay */}
@@ -179,7 +179,7 @@ function Home() {
                     {/* Bottom Fade out to Footer */}
                     <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: '100px', background: 'linear-gradient(0deg, rgba(21,24,28,1) 0%, rgba(21,24,28,0) 100%)' }}></div>
 
-                    {/* Thematic positioning for the text & carousel content over the 2.jpg background image */}
+                    {/* Thematic positioning for the text & carousel content over the home-artwork-bg.jpg background image */}
                     <div className="thematic-overlay">
 
                         {/* Left Column: Description & Stats */}
@@ -261,11 +261,11 @@ function Home() {
             {/* Event Details Section */}
             <section className="event-details-section">
                 <div className="event-details-bg">
-                    <img src="/assets/3.jpeg" alt="Going Merry Ship" className="event-details-ship event-ship-desktop" />
+                    <img src="/assets/going-merry-bg.jpeg" alt="Going Merry Ship" className="event-details-ship event-ship-desktop" />
                     <img src="/assets/mobile3.png" alt="Going Merry Ship Mobile" className="event-details-ship event-ship-mobile" />
                     {/* Top fade — blends from dark above */}
                     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '180px', background: 'linear-gradient(to bottom, rgba(21,24,28,1) 0%, transparent 100%)', zIndex: 5, pointerEvents: 'none' }}></div>
-                    {/* Bottom fade — blends into 4.png section */}
+                    {/* Bottom fade — blends into bright-bg.png section */}
                     <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: '180px', background: 'linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%)', zIndex: 5, pointerEvents: 'none' }}></div>
                 </div>
                 <div className="event-details-content">
@@ -352,7 +352,7 @@ function Home() {
                 </div>
             </section>
 
-            {/* New Section for 4.png - Natural aspect ratio with Overlay Text and Background effect */}
+            {/* New Section for bright-bg.png - Natural aspect ratio with Overlay Text and Background effect */}
             <section id="road-to-laughtale" className="new-section-4" style={{
                 width: '100%',
                 position: 'relative',
@@ -367,7 +367,7 @@ function Home() {
             }}>
                 {/* Dark overlay */}
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.7)', zIndex: 0 }}></div>
-                {/* Top fade — blends from 3.jpeg section */}
+                {/* Top fade — blends from going-merry-bg.jpeg section */}
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '150px', background: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, transparent 100%)', zIndex: 1, pointerEvents: 'none' }}></div>
                 {/* Bottom fade — blends into nikka.jpeg */}
                 <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: '100px', background: 'linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%)', zIndex: 1, pointerEvents: 'none' }}></div>
@@ -377,7 +377,7 @@ function Home() {
                         R<span className="op-font">O</span>AD T<span className="op-font">O</span> L<span className="op-font">A</span>UGH T<span className="op-font">A</span>LE
                     </h1>
 
-                    {/* Event Flow - Dark Cards under 4.png */}
+                    {/* Event Flow - Dark Cards under bright-bg.png */}
                     <div className="event-flow-wrapper">
 
                         {/* Round 1 Card */}
@@ -526,15 +526,15 @@ function Home() {
 
                 return (
                     <>
-                        {/* ===== 6.png Gallery Section (Matches structure of mobile 4/nikka) ===== */}
+                        {/* ===== gallery-bg.png Gallery Section (Matches structure of mobile 4/nikka) ===== */}
                         <section id="gallery" className="nikka-section-wrapper" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '12rem 1rem 4rem 1rem' }}>
                             {/* Background image + glass overlay — absolute behind everything */}
                             <picture className="nikka-bg-picture">
-                                <source media="(max-width: 900px)" srcSet="/assets/6.png" />
-                                <img src="/assets/6.png" alt="" aria-hidden="true" className="nikka-bg-img" style={{ objectPosition: 'center -100px' }} />
+                                <source media="(max-width: 900px)" srcSet="/assets/gallery-bg.png" />
+                                <img src="/assets/gallery-bg.png" alt="" aria-hidden="true" className="nikka-bg-img" style={{ objectPosition: 'center -100px' }} />
                             </picture>
 
-                            {/* Smooth top fade transition bridging from the previous section into 6.png */}
+                            {/* Smooth top fade transition bridging from the previous section into gallery-bg.png */}
                             <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '300px', background: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, transparent 100%)', zIndex: 10, pointerEvents: 'none' }}></div>
 
                             {/* Glass Effect Overlay */}
