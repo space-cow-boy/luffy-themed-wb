@@ -56,7 +56,7 @@ const Developers = () => {
                         DE<span className="op-font">V</span>ELOPERS
                     </h1>
                     <p style={{ color: '#fff', fontSize: isMobile ? '0.9rem' : '1.4rem', fontFamily: "'Inter', sans-serif", textAlign: 'center', textShadow: '2px 2px 4px #000', marginTop: '0.5rem', fontWeight: 500 }}>
-                        Meet the minds behind Hack-O-Holic 4.0
+                        Meet the minds behind Hack O Holic website
                     </p>
                 </div>
 

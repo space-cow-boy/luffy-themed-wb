@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { Clock, Users, GraduationCap, MapPin, Anchor, Award } from 'lucide-react';
 
 function Home() {
@@ -154,10 +154,8 @@ function Home() {
                 <div className="description-container" style={{ maxWidth: '800px', marginTop: 'calc(4rem - 20px)' }}>
                     <img src="/assets/description.png" alt="Hackathon Description Details" className="description-img" />
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1.5rem' }}>
-                        <a
-                            href="https://github.com/Ixotic27?tab=overview&from=2026-03-01&to=2026-03-03"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <Link
+                            to="/register"
                             style={{ display: 'inline-block', transition: 'transform 0.3s ease', cursor: 'pointer', backgroundColor: '#ffffff', padding: '0.4rem', borderRadius: '8px', textDecoration: 'none' }}
                             onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
                             onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
@@ -165,7 +163,7 @@ function Home() {
                             <div style={{ border: '2px solid #1e40af', padding: '0.2rem', borderRadius: '4px', backgroundColor: '#ffffff' }}>
                                 <img src="/assets/register.png" alt="Register Now" style={{ width: '100%', maxWidth: '350px', height: 'auto', display: 'block' }} />
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -673,11 +671,11 @@ function Home() {
 
                                     {/* Row 2: register button, centered */}
                                     <div className="manga-mosaicui-row2">
-                                        <button className='manga-mosaicui-btn'>
+                                        <Link to="/register" className='manga-mosaicui-btn' style={{ textDecoration: 'none' }}>
                                             <img src="/assets/luffy hat.png" alt="Luffy Hat" style={{ background: 'transparent' }} />
                                             <span>Register Now</span>
                                             <i>&gt;</i>
-                                        </button>
+                                        </Link>
                                     </div>
 
                                 </div>

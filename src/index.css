@@ -222,8 +222,6 @@ button {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: overlay;
 }
 
 @media (max-width: 900px) {

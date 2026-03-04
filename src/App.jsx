@@ -7,6 +7,7 @@ import About from './pages/About';
 import Leaderboard from './pages/Leaderboard';
 import Events from './pages/Events';
 import Developers from './pages/Developers';
+import Register from './pages/Register';
 import './index.css';
 
 const ContentWrapper = ({ children }) => {
@@ -15,12 +16,14 @@ const ContentWrapper = ({ children }) => {
   const isLeaderboard = location.pathname === '/leaderboard';
   const isEvents = location.pathname === '/events';
   const isDevelopers = location.pathname === '/developers';
+  const isRegister = location.pathname === '/register';
 
   let bgClass = 'bg-home';
   if (isAbout) bgClass = 'bg-about';
   if (isLeaderboard) bgClass = 'bg-leaderboard';
   if (isEvents) bgClass = 'bg-events';
   if (isDevelopers) bgClass = 'bg-developers';
+  if (isRegister) bgClass = 'bg-home'; // Reuse home background
 
   return (
     <div className={`main-content ${bgClass}`}>
@@ -110,7 +113,7 @@ function App() {
                     <li><Link to="/#gallery" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link></li>
                     <li><Link to="/leaderboard" onClick={() => setIsMobileMenuOpen(false)}>Leaderboard</Link></li>
                   </ul>
-                  <button className="register-btn" onClick={() => setIsMobileMenuOpen(false)}>Register</button>
+                  <Link to="/register" className="register-btn" onClick={() => setIsMobileMenuOpen(false)}>Register</Link>
                 </div>
               </motion.nav>
             )}
@@ -133,6 +136,7 @@ function App() {
                   <Route path="/leaderboard" element={<Leaderboard />} />
                   <Route path="/events" element={<Events />} />
                   <Route path="/developers" element={<Developers />} />
+                  <Route path="/register" element={<Register />} />
                 </Routes>
 
                 {/* Footer */}
