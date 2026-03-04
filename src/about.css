@@ -309,21 +309,25 @@
         margin-bottom: 1.5rem;
     }
 
-    /* Our Story: Keep horizontal, but scale down */
+    /* Our Story: Stack vertically, picture above text */
     .ap-story-container {
-        gap: 1rem;
+        flex-direction: column;
+        gap: 1.5rem;
         padding: 1.5rem;
         border-radius: 16px;
     }
 
     .ap-story-image {
-        min-width: 120px;
+        width: 100%;
+        min-width: unset;
         transform: translateX(0);
         /* Remove the negative margin for tight mobile spaces */
     }
 
     .ap-story-image img {
-        min-height: 200px;
+        width: 100%;
+        height: 250px;
+        min-height: unset;
         border-radius: 12px;
     }
 
@@ -375,11 +379,12 @@
     }
 
     .ap-story-image {
-        min-width: 100px;
+        min-width: unset;
     }
 
     .ap-story-image img {
-        min-height: 150px;
+        min-height: unset;
+        height: 200px;
     }
 
     .ap-story-text p {
