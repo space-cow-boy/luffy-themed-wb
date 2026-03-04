@@ -53,8 +53,8 @@ const Events = () => {
                         <div className="ap-diff-card" style={{ background: 'rgba(15, 23, 42, 0.95)', border: '1px solid rgba(255, 255, 255, 0.1)', overflow: 'hidden', padding: 0, backdropFilter: 'blur(10px)' }}>
                             <img src="/assets/squid%20game.webp" alt="Squid game" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'top' }} />
                             <div style={{ padding: '2rem' }}>
-                                <h4 style={{ color: '#ffb300', fontSize: '1.5rem', marginBottom: '1rem', fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '1px' }}>Squid game</h4>
-                                <p style={{ color: '#e2e8f0' }}>Survive the ultimate coding challenge. Test your logic, speed, and problem-solving skills in this high-stakes elimination tournament.</p>
+                                <h4 style={{ color: '#ffb300', fontSize: '1.5rem', marginBottom: '1rem', fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '1px' }}>Squid Game</h4>
+                                <p style={{ color: '#e2e8f0' }}>Enter the ultimate survival tournament! Compete against other players in high-stakes, nerve-wracking mini-games inspired by the hit show. Outlast everyone else to claim the grand prize.</p>
                             </div>
                         </div>
                         <div className="ap-diff-card" style={{ background: 'rgba(15, 23, 42, 0.95)', border: '1px solid rgba(255, 255, 255, 0.1)', overflow: 'hidden', padding: 0, backdropFilter: 'blur(10px)' }}>
