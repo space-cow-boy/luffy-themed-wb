@@ -607,7 +607,7 @@ function Home() {
                                 <div style={{ width: '100%', maxWidth: '800px', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                                     {[
                                         { q: "What is Hack-O-Holic 4.0?", a: "A 24-hour One Piece-themed hackathon bringing together developers and innovators to build incredible projects." },
-                                        { q: "Who can participate?", a: "University students! You can participate in teams of 2 to 4 members." },
+                                        { q: "Who can participate?", a: "Graphic Era University students! You can participate in teams of 2 to 4 members." },
                                         { q: "Is it an online or offline event?", a: "It is a completely offline, on-campus event in Graphic Era Hill University, Dehradun." },
                                         { q: "What should I bring?", a: "Bring your laptop, charger, student ID, any hardware you might need, and your adventurous pirate spirit!" }
                                     ].map((faq, i) => (
