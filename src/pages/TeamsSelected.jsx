@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Container, Row, Col, Form, InputGroup } from 'react-bootstrap';
 import { Search } from 'lucide-react';
-
 // Mock data for teams - replace with real data when available
 const mockTeams = [
     { id: 1, name: 'Straw Hat Pirates', members: ['Luffy', 'Zoro', 'Nami', 'Usopp', 'Sanji'], projectIdea: 'AI-powered navigation system for the Grand Line', status: 'Selected' },
@@ -47,7 +47,7 @@ const TeamsSelected = () => {
                 zIndex: 0
             }}></div>
 
-            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 15px', position: 'relative', zIndex: 1 }}>
+            <Container style={{ position: 'relative', zIndex: 1 }}>
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -75,55 +75,54 @@ const TeamsSelected = () => {
                 </motion.div>
 
                 {/* Search Bar */}
-                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '3rem' }}>
-                    <div style={{ width: '100%', maxWidth: '600px' }}>
+                <Row className="justify-content-center mb-5">
+                    <Col md={8} lg={6}>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            <div style={{
-                                display: 'flex',
-                                alignItems: 'center',
+                            <InputGroup style={{
                                 background: 'rgba(255, 255, 255, 0.05)',
-                                border: '1px solid rgba(201, 42, 42, 0.3)',
                                 borderRadius: '50px',
-                                padding: '5px 15px',
+                                padding: '5px',
+                                border: '1px solid rgba(201, 42, 42, 0.3)',
                                 backdropFilter: 'blur(10px)',
-                                boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+                                boxShadow: '0 8px 32px rgba(0,0,0,0.3)'
                             }}>
-                                <Search size={22} color="#c92a2a" style={{ marginRight: '10px' }} />
-                                <input
-                                    type="text"
+                                <InputGroup.Text style={{
+                                    background: 'transparent',
+                                    border: 'none',
+                                    color: '#c92a2a',
+                                    paddingLeft: '20px'
+                                }}>
+                                    <Search size={22} />
+                                </InputGroup.Text>
+                                <Form.Control
                                     placeholder="Search by crew name, member, or tech stack..."
                                     value={searchTerm}
                                     onChange={(e) => setSearchTerm(e.target.value)}
                                     style={{
-                                        width: '100%',
                                         background: 'transparent',
                                         border: 'none',
                                         color: '#fff',
-                                        outline: 'none',
-                                        padding: '12px 10px',
+                                        boxShadow: 'none',
+                                        padding: '12px 15px',
                                         fontSize: '1.1rem'
                                     }}
-                                    className="placeholder-white"
+                                    className="text-white placeholder-gray-400 focus:outline-none placeholder-opacity-50"
                                 />
-                            </div>
+                            </InputGroup>
                         </motion.div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
 
                 {/* Teams Grid */}
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-                    gap: '1.5rem',
-                }}>
+                <Row className="g-4">
                     <AnimatePresence>
                         {filteredTeams.length > 0 ? (
                             filteredTeams.map((team, index) => (
-                                <div key={team.id} style={{ display: 'flex' }}>
+                                <Col key={team.id} xs={12} md={6} lg={4}>
                                     <motion.div
                                         layout
                                         initial={{ opacity: 0, scale: 0.8 }}
@@ -228,10 +227,10 @@ const TeamsSelected = () => {
                                             </div>
                                         </div>
                                     </motion.div>
-                                </div>
+                                </Col>
                             ))
                         ) : (
-                            <div style={{ gridColumn: '1 / -1', textAlign: 'center', padding: '3rem 0' }}>
+                            <Col xs={12}>
                                 <motion.div
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
@@ -241,11 +240,11 @@ const TeamsSelected = () => {
                                     <h3 style={{ color: '#c92a2a', fontFamily: "'Cinzel', serif" }}>No crews found</h3>
                                     <p style={{ color: '#6c757d' }}>Your compass might be broken. Try another search term!</p>
                                 </motion.div>
-                            </div>
+                            </Col>
                         )}
                     </AnimatePresence>
-                </div>
-            </div>
+                </Row>
+            </Container>
 
             <style>
                 {`
