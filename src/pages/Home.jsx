@@ -38,7 +38,7 @@ function Home() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const carouselImages = [
         '/assets/carousel-image-1.jpg',
-        '/assets/carousel-image-2.jpg',
+        '/assets/carousel-image-home-artwork-bg.jpg',
         '/assets/carousel-image-3.jpg',
         '/assets/carousel-image-4.jpg'
     ];
@@ -56,7 +56,7 @@ function Home() {
     const galleryImages = [
         '/assets/gallery pictures/g1.jpeg',
         '/assets/gallery pictures/g2.jpeg',
-        '/assets/gallery pictures/g3.jpeg',
+        '/assets/gallery pictures/ggoing-merry-bg.jpeg',
         '/assets/gallery pictures/g4.jpeg',
         '/assets/gallery pictures/g5.jpeg',
         '/assets/gallery pictures/g6.jpeg',
@@ -152,7 +152,7 @@ function Home() {
                 </div>
 
                 <div className="description-container" style={{ maxWidth: '800px', marginTop: 'calc(4rem - 20px)' }}>
-                    <img src="/assets/description.png" alt="Hackathon Description Details" className="description-img" />
+                    <img src="/assets/description.png" alt="Hackathon Description Details" className="description-img" loading="lazy" decoding="async" />
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1.5rem' }}>
                         <Link
                             to="/register"
@@ -161,7 +161,7 @@ function Home() {
                             onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
                         >
                             <div style={{ border: '2px solid #1e40af', padding: '0.2rem', borderRadius: '4px', backgroundColor: '#ffffff' }}>
-                                <img src="/assets/register.png" alt="Register Now" style={{ width: '100%', maxWidth: '350px', height: 'auto', display: 'block' }} />
+                                <img src="/assets/register.png" alt="Register Now" style={{ width: '100%', maxWidth: '350px', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
                             </div>
                         </Link>
                     </div>
@@ -171,7 +171,7 @@ function Home() {
             {/* home-artwork-bg.jpg Page Layout Section */}
             <section style={{ width: '100%', backgroundColor: '#0f172a', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
                 <div className="thematic-bg-container" style={{ width: '100%', position: 'relative' }}>
-                    <img src="/assets/home-artwork-bg.jpg" alt="One Piece Artwork" className="thematic-bg-img" />
+                    <img src="/assets/home-artwork-bg.jpg" alt="One Piece Artwork" className="thematic-bg-img" loading="lazy" decoding="async" />
                     {/* Top Fade Transition */}
                     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '200px', background: 'linear-gradient(180deg, rgba(31,34,40,1) 0%, rgba(31,34,40,0) 100%)' }}></div>
                     {/* Subtle Red Thematic Overlay */}
@@ -261,8 +261,8 @@ function Home() {
             {/* Event Details Section */}
             <section className="event-details-section">
                 <div className="event-details-bg">
-                    <img src="/assets/going-merry-bg.jpeg" alt="Going Merry Ship" className="event-details-ship event-ship-desktop" />
-                    <img src="/assets/mobile3.png" alt="Going Merry Ship Mobile" className="event-details-ship event-ship-mobile" />
+                    <img src="/assets/going-merry-bg.jpeg" alt="Going Merry Ship" className="event-details-ship event-ship-desktop" loading="lazy" decoding="async" />
+                    <img src="/assets/mobile3.png" alt="Going Merry Ship Mobile" className="event-details-ship event-ship-mobile" loading="lazy" decoding="async" />
                     {/* Top fade — blends from dark above */}
                     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '180px', background: 'linear-gradient(to bottom, rgba(21,24,28,1) 0%, transparent 100%)', zIndex: 5, pointerEvents: 'none' }}></div>
                     {/* Bottom fade — blends into bright-bg.png section */}
@@ -273,42 +273,42 @@ function Home() {
                     {/* Desktop Cards - PNG images with text */}
                     <div className="event-cards-grid desktop-cards">
                         <div className="event-card-wrapper card-luffy">
-                            <img src="/assets/cards/luffy.png" alt="Format Card" className="event-card-img" />
+                            <img src="/assets/cards/luffy.png" alt="Format Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">FORMAT</span>
                                 <span className="event-card-value">24 Hours · Offline — On Campus</span>
                             </div>
                         </div>
                         <div className="event-card-wrapper card-zoro">
-                            <img src="/assets/cards/zoro.png" alt="Team Size Card" className="event-card-img" />
+                            <img src="/assets/cards/zoro.png" alt="Team Size Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">TEAM SIZE</span>
                                 <span className="event-card-value">2 – 4 Members</span>
                             </div>
                         </div>
                         <div className="event-card-wrapper card-nami">
-                            <img src="/assets/cards/nami.png" alt="Eligibility Card" className="event-card-img" />
+                            <img src="/assets/cards/nami.png" alt="Eligibility Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">ELIGIBILITY</span>
                                 <span className="event-card-value">University Students</span>
                             </div>
                         </div>
                         <div className="event-card-wrapper card-sanji">
-                            <img src="/assets/cards/sanji.png" alt="Venue Card" className="event-card-img" />
+                            <img src="/assets/cards/sanji.png" alt="Venue Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">VENUE</span>
                                 <span className="event-card-value">Graphic Era Hill University<br />Dehradun</span>
                             </div>
                         </div>
                         <div className="event-card-wrapper card-ussop">
-                            <img src="/assets/cards/ussop.png" alt="Max Registrations Card" className="event-card-img" />
+                            <img src="/assets/cards/ussop.png" alt="Max Registrations Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">MAX REGISTRATIONS</span>
                                 <span className="event-card-value">250 Teams</span>
                             </div>
                         </div>
                         <div className="event-card-wrapper card-chopper">
-                            <img src="/assets/cards/chopper (2).png" alt="Finale Entries Card" className="event-card-img" />
+                            <img src="/assets/cards/chopper (2).png" alt="Finale Entries Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">FINALE ENTRIES</span>
                                 <span className="event-card-value">110 / 250</span>
@@ -436,7 +436,7 @@ function Home() {
                 {/* Background image + glass overlay — absolute behind everything */}
                 <picture className="nikka-bg-picture">
                     <source media="(max-width: 900px)" srcSet="/assets/mobile%20nikka.png" />
-                    <img src="/assets/nikka.jpeg" alt="" aria-hidden="true" className="nikka-bg-img" />
+                    <img src="/assets/nikka.jpeg" alt="" aria-hidden="true" className="nikka-bg-img" loading="lazy" decoding="async" />
                 </picture>
                 <div className="nikka-bg-overlay"></div>
 
@@ -494,7 +494,7 @@ function Home() {
                     '/assets/MangaPanels/26ff1d71915a78bd30b6d9b24bb6c994.jpg',
                     '/assets/MangaPanels/gear2.webp',
                     '/assets/MangaPanels/50d48b2918f1cb1459bd32c7a9666ede.webp',
-                    '/assets/MangaPanels/Screenshot 2026-03-02 164303.png',
+                    '/assets/MangaPanels/82ff9dc98dcd492fd7024f808d6f6436.webp',
                 ];
                 const row2 = [
                     '/assets/MangaPanels/download (5).jpg',
@@ -531,7 +531,7 @@ function Home() {
                             {/* Background image + glass overlay — absolute behind everything */}
                             <picture className="nikka-bg-picture">
                                 <source media="(max-width: 900px)" srcSet="/assets/gallery-bg.png" />
-                                <img src="/assets/gallery-bg.png" alt="" aria-hidden="true" className="nikka-bg-img" style={{ objectPosition: 'center -100px' }} />
+                                <img src="/assets/gallery-bg.png" alt="" aria-hidden="true" className="nikka-bg-img" style={{ objectPosition: 'center -100px' }} loading="lazy" decoding="async" />
                             </picture>
 
                             {/* Smooth top fade transition bridging from the previous section into gallery-bg.png */}
@@ -607,7 +607,7 @@ function Home() {
                                 <div style={{ width: '100%', maxWidth: '800px', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                                     {[
                                         { q: "What is Hack-O-Holic 4.0?", a: "A 24-hour One Piece-themed hackathon bringing together developers and innovators to build incredible projects." },
-                                        { q: "Who can participate?", a: "Graphic Era University students! You can participate in teams of 2 to 4 members." },
+                                        { q: "Who can participate?", a: "University students! You can participate in teams of 2 to 4 members." },
                                         { q: "Is it an online or offline event?", a: "It is a completely offline, on-campus event in Graphic Era Hill University, Dehradun." },
                                         { q: "What should I bring?", a: "Bring your laptop, charger, student ID, any hardware you might need, and your adventurous pirate spirit!" }
                                     ].map((faq, i) => (
@@ -662,7 +662,7 @@ function Home() {
                                 <div className="manga-mosaicui">
                                     {/* Row 1: skull icon + text */}
                                     <div className="manga-mosaicui-row1" style={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                                        <img src="/assets/strawhat skull.png" alt="Strawhat Skull" className="manga-skull" style={{ marginBottom: '1rem' }} />
+                                        <img src="/assets/strawhat skull.png" alt="Strawhat Skull" className="manga-skull" style={{ marginBottom: '1rem' }} loading="lazy" decoding="async" />
                                         <span style={{ fontSize: '2.5rem', fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '4px', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>ONE PIECE</span>
                                         <div className="manga-mosaic-text-wrapper" style={{ marginTop: '0.5rem' }}>
                                             <p className='manga-mosaicui-desc' style={{ textAlign: 'center' }}>want to join the exciting adventure with us</p>

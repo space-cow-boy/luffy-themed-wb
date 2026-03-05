@@ -8,6 +8,7 @@ import Leaderboard from './pages/Leaderboard';
 import Events from './pages/Events';
 import Developers from './pages/Developers';
 import Register from './pages/Register';
+import Admin from './pages/Admin';
 import './index.css';
 
 const ScrollToTop = () => {
@@ -148,6 +149,7 @@ function App() {
                   <Route path="/events" element={<Events />} />
                   <Route path="/developers" element={<Developers />} />
                   <Route path="/register" element={<Register />} />
+                  <Route path="/admin" element={<Admin />} />
                 </Routes>
 
                 {/* Footer */}

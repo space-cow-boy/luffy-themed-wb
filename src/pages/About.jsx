@@ -158,7 +158,7 @@ function About() {
                         <h2 className="ap-section-title text-center">Our Story</h2>
                         <div className="ap-story-container">
                             <div className="ap-story-image">
-                                <img src="/assets/winner.jpg" alt="Our Story" />
+                                <img src="/assets/winner.jpg" alt="Our Story" loading="lazy" decoding="async" />
                             </div>
                             <div className="ap-story-text">
                                 <p>Hack-O-Holic began in 2023 as a small, campus-based event with just 50 participants. The enthusiasm and innovation demonstrated during that first event inspired us to expand our vision and reach.</p>
@@ -174,7 +174,7 @@ function About() {
                         <div className="ap-guide-grid">
                             {guides.map((guide, idx) => (
                                 <div key={idx} className="ap-guide-card">
-                                    <img src={guide.img} alt={guide.name} className="ap-guide-img" />
+                                    <img src={guide.img} alt={guide.name} className="ap-guide-img" loading="lazy" decoding="async" />
                                     <div className="ap-guide-info">
                                         <h4>{guide.name}</h4>
                                         <span className="ap-guide-title">{guide.title}</span>
