@@ -512,7 +512,10 @@ function Home() {
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/26ff1d71915a78bd30b6d9b24bb6c994_rdj2ko',
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/gear2_i30q7e',
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/50d48b2918f1cb1459bd32c7a9666ede_vw9chb',
-                    '/assets/MangaPanels/82ff9dc98dcd492fd7024f808d6f6436.webp',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Hack O Holic 4.0/new manga panels/pxb79lykluxell8obvzg',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Hack O Holic 4.0/new manga panels/wwdrta2nsrscskego3kx',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Hack O Holic 4.0/new manga panels/bnfbv0t7rnrsmsixnhg8',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Hack O Holic 4.0/new manga panels/l3qjaj3la2vceuzvffhh',
                 ];
                 const row2 = [
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_5_q7d3s9',
@@ -526,6 +529,9 @@ function Home() {
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/f0c83cbbb913934694c5990734c6e0a9_lxlyj8',
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/loki_first_appearance_oxqxqu',
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/luffy_gear_5_brblaj',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Hack O Holic 4.0/new manga panels/wijsk7nassyu0uivxgsm',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Hack O Holic 4.0/new manga panels/jov19lxotlrknrysriir',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Hack O Holic 4.0/new manga panels/a9c4ny621xsubcdzhoos',
                 ];
                 const row3 = [
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_11_ke2kiw',
@@ -540,6 +546,9 @@ function Home() {
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/whitebeard_vs_marine_qg4ofl',
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/wp11456620_syoitc',
                     'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/drop-the-coolest-looking-op-manga-panel-artistically-v0-r37rr45eee4f1_qte4wn',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Hack O Holic 4.0/new manga panels/fumem1vy6szrbfm4ckmz',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Hack O Holic 4.0/new manga panels/ryrpwdrp9ehr9jrgexor',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Hack O Holic 4.0/new manga panels/sudunzlfwxwm478cef88',
                 ];
 
                 return (
