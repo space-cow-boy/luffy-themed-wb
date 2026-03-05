@@ -98,23 +98,22 @@ const Leaderboard = () => {
     if (!visibility) {
         return (
             <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
+                position: 'relative',
                 width: '100%',
                 minHeight: '100vh',
-                zIndex: 99,
+                zIndex: 1,
                 backgroundImage: `url('${isMobile ? "https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/chopper_mobile_xmfbph" : "https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/chopper_desktop_nwc9or"}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                overflow: 'hidden'
+                overflow: 'hidden',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                paddingTop: '80px' // Space for navbar
             }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.6)', zIndex: 0 }}></div>
                 <div style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
+                    position: 'relative',
                     zIndex: 2,
                     textAlign: 'center',
                     padding: '3rem 2rem',

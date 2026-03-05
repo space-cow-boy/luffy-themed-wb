@@ -175,51 +175,53 @@ const TeamsSelected = () => {
                             />
                         </div>
 
-                        {/* View Toggles */}
-                        <div style={{
-                            display: 'flex',
-                            gap: '10px',
-                            justifyContent: isMobile ? 'center' : 'flex-end'
-                        }}>
-                            <button
-                                onClick={() => setViewMode('list')}
-                                style={{
-                                    background: viewMode === 'list' ? 'rgba(255, 179, 0, 0.2)' : 'rgba(255, 255, 255, 0.05)',
-                                    border: `1px solid ${viewMode === 'list' ? '#ffb300' : 'rgba(255, 255, 255, 0.1)'}`,
-                                    color: viewMode === 'list' ? '#ffb300' : '#888',
-                                    padding: '8px 16px',
-                                    borderRadius: '20px',
-                                    cursor: 'pointer',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '6px',
-                                    fontSize: '0.9rem',
-                                    fontWeight: 'bold',
-                                    transition: 'all 0.2s'
-                                }}
-                            >
-                                <List size={16} /> List
-                            </button>
-                            <button
-                                onClick={() => setViewMode('grid')}
-                                style={{
-                                    background: viewMode === 'grid' ? 'rgba(255, 179, 0, 0.2)' : 'rgba(255, 255, 255, 0.05)',
-                                    border: `1px solid ${viewMode === 'grid' ? '#ffb300' : 'rgba(255, 255, 255, 0.1)'}`,
-                                    color: viewMode === 'grid' ? '#ffb300' : '#888',
-                                    padding: '8px 16px',
-                                    borderRadius: '20px',
-                                    cursor: 'pointer',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '6px',
-                                    fontSize: '0.9rem',
-                                    fontWeight: 'bold',
-                                    transition: 'all 0.2s'
-                                }}
-                            >
-                                <LayoutGrid size={16} /> Grid
-                            </button>
-                        </div>
+                        {/* View Toggles (Hidden on Mobile) */}
+                        {!isMobile && (
+                            <div style={{
+                                display: 'flex',
+                                gap: '10px',
+                                justifyContent: 'flex-end'
+                            }}>
+                                <button
+                                    onClick={() => setViewMode('list')}
+                                    style={{
+                                        background: viewMode === 'list' ? 'rgba(255, 179, 0, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                                        border: `1px solid ${viewMode === 'list' ? '#ffb300' : 'rgba(255, 255, 255, 0.1)'}`,
+                                        color: viewMode === 'list' ? '#ffb300' : '#888',
+                                        padding: '8px 16px',
+                                        borderRadius: '20px',
+                                        cursor: 'pointer',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '6px',
+                                        fontSize: '0.9rem',
+                                        fontWeight: 'bold',
+                                        transition: 'all 0.2s'
+                                    }}
+                                >
+                                    <List size={16} /> List
+                                </button>
+                                <button
+                                    onClick={() => setViewMode('grid')}
+                                    style={{
+                                        background: viewMode === 'grid' ? 'rgba(255, 179, 0, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+                                        border: `1px solid ${viewMode === 'grid' ? '#ffb300' : 'rgba(255, 255, 255, 0.1)'}`,
+                                        color: viewMode === 'grid' ? '#ffb300' : '#888',
+                                        padding: '8px 16px',
+                                        borderRadius: '20px',
+                                        cursor: 'pointer',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '6px',
+                                        fontSize: '0.9rem',
+                                        fontWeight: 'bold',
+                                        transition: 'all 0.2s'
+                                    }}
+                                >
+                                    <LayoutGrid size={16} /> Grid
+                                </button>
+                            </div>
+                        )}
                     </div>
 
                     {/* Teams Layout */}
@@ -238,15 +240,15 @@ const TeamsSelected = () => {
                             </motion.div>
                         ) : currentTeams.length > 0 ? (
                             <motion.div
-                                key={`layout-${viewMode}`} // Force re-render on layout change
+                                key={`layout-${isMobile ? 'list' : viewMode}`} // Force re-render on layout change
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -10 }}
                                 transition={{ duration: 0.3 }}
                                 style={{
                                     width: '100%',
-                                    display: viewMode === 'grid' || isMobile ? 'grid' : 'flex',
-                                    gridTemplateColumns: viewMode === 'grid'
+                                    display: 'grid',
+                                    gridTemplateColumns: (!isMobile && viewMode === 'grid')
                                         ? 'repeat(auto-fill, minmax(280px, 1fr))'
                                         : (isMobile ? '1fr' : 'none'),
                                     flexDirection: viewMode === 'list' && !isMobile ? 'column' : 'unset',
@@ -431,7 +433,7 @@ const TeamsSelected = () => {
                     }
                     `}
             </style>
-        </div>
+        </div >
     );
 };
 
