@@ -38,7 +38,7 @@ function Home() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const carouselImages = [
         '/assets/carousel-image-1.jpg',
-        '/assets/carousel-image-home-artwork-bg.jpg',
+        '/assets/carousel-image-2.jpg',
         '/assets/carousel-image-3.jpg',
         '/assets/carousel-image-4.jpg'
     ];
@@ -56,7 +56,7 @@ function Home() {
     const galleryImages = [
         '/assets/gallery pictures/g1.jpeg',
         '/assets/gallery pictures/g2.jpeg',
-        '/assets/gallery pictures/ggoing-merry-bg.jpeg',
+        '/assets/gallery pictures/g3.jpeg',
         '/assets/gallery pictures/g4.jpeg',
         '/assets/gallery pictures/g5.jpeg',
         '/assets/gallery pictures/g6.jpeg',

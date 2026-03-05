@@ -1541,7 +1541,7 @@ button {
 
 @media (max-width: 900px) {
   .new-section-4 {
-    background-image: url('/assets/mobile%20bright-bg.png');
+    background-image: url('/assets/mobile-bright-bg.png');
   }
 
   .event-flow-wrapper {
@@ -2610,6 +2610,7 @@ button {
     max-height: 350px;
   }
 }
+
 @media (max-width: 900px) {
   body * {
     background-attachment: scroll !important;
