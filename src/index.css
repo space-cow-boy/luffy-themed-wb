@@ -212,6 +212,15 @@ button {
   background-blend-mode: overlay;
 }
 
+@media (max-width: 900px) {
+  .bg-home {
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+}
+
 .bg-about {
   background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/bright-bg_xocrgu');
   background-size: cover;
