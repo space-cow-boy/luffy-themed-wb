@@ -197,9 +197,15 @@ function App() {
                         <span>Hackoholic4.0@gmail.com</span>
                       </div>
 
-                      <div className="contact-item phones">
-                        <Phone size={20} />
-                        <span>+91 90680 98724 &nbsp; +91 78188 74934<br />+91 81910 13531</span>
+                      <div className="contact-item phones" style={{ alignItems: 'flex-start' }}>
+                        <Phone size={20} style={{ marginTop: '4px' }} />
+                        <div className="phone-numbers-container">
+                          <span>+91 90680 98724</span>
+                          <span className="hide-mobile" style={{ margin: '0 8px' }}>|</span>
+                          <span>+91 78188 74934</span>
+                          <span className="hide-mobile" style={{ margin: '0 8px' }}>|</span>
+                          <span>+91 81910 13531</span>
+                        </div>
                       </div>
 
                       <div className="contact-item">

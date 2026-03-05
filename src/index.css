@@ -212,15 +212,7 @@ button {
   background-blend-mode: overlay;
 }
 
-@media (max-width: 900px) {
-  .bg-home {
-    background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/v1772731872/luffy_mobile_v3.png');
-    background-attachment: scroll;
-    /* User requested: make it stretch only vertically and till the 2nd bg starts. We can achieve this by ensuring it covers the container height without horizontal zoom clipping, or by simply using 100% 100%, but 100% auto or auto 100% might be safer depending on aspect ratio. Let's force it to fill height. */
-    background-size: 100% 100%;
-    /* Note: Since it stretches vertically, 100% 100% might distort it. Let's try cover with a specific container max-height, or simply let it fall 'cover' but stop the body from having this class. The background is applied to the root element. */
-  }
-}
+
 
 .bg-about {
   background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/bright-bg_xocrgu');
@@ -2630,6 +2622,13 @@ button {
   }
 }
 
+.phone-numbers-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 900px) {
   body * {
     background-attachment: scroll !important;
@@ -2637,9 +2636,13 @@ button {
 }
 
 @media (max-width: 768px) {
-  .contact-item.phones span {
-    display: flex;
+  .phone-numbers-container {
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.3rem;
+  }
+
+  .hide-mobile {
+    display: none;
   }
 }
