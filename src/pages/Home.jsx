@@ -27,20 +27,20 @@ function Home() {
     const [activeTrack, setActiveTrack] = useState(null);
 
     const tracks = [
-        { id: 1, image: '/assets/track cards/tc1.png', title: 'AI & Machine Learning', description: 'Build intelligent solutions using cutting-edge AI and ML technologies.', color: '#1a1a2e', imgPosition: 'top center' },
-        { id: 4, image: '/assets/track cards/tc4.png', title: 'Open Innovation', description: 'Revolutionize finance with blockchain and decentralized systems.', color: '#1b1b2f', imgPosition: 'center top' },
-        { id: 3, image: '/assets/track cards/tc2.png', title: 'IoT & Hardware', description: 'Bridge the physical and digital worlds through smart connected devices.', color: '#16213e', imgPosition: 'top center' },
-        { id: 5, image: '/assets/track cards/tc5.png', title: 'Cybersecurity', description: 'Defend the digital frontier with innovative security solutions.', color: '#162032', imgPosition: 'top center' },
-        { id: 2, image: '/assets/track cards/tc3.png', title: 'Cloud Computing', description: 'Create powerful web and mobile applications for the modern era.', color: '#5a2d00', imgPosition: 'top center' },
+        { id: 1, image: 'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/tc1_qoqghv', title: 'AI & Machine Learning', description: 'Build intelligent solutions using cutting-edge AI and ML technologies.', color: '#1a1a2e', imgPosition: 'top center' },
+        { id: 4, image: 'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/tc4_tjynjx', title: 'Open Innovation', description: 'Revolutionize finance with blockchain and decentralized systems.', color: '#1b1b2f', imgPosition: 'center top' },
+        { id: 3, image: 'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/tc2_c1nobf', title: 'IoT & Hardware', description: 'Bridge the physical and digital worlds through smart connected devices.', color: '#16213e', imgPosition: 'top center' },
+        { id: 5, image: 'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/tc5_pdj0oe', title: 'Cybersecurity', description: 'Defend the digital frontier with innovative security solutions.', color: '#162032', imgPosition: 'top center' },
+        { id: 2, image: 'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/tc3_totskg', title: 'Cloud Computing', description: 'Create powerful web and mobile applications for the modern era.', color: '#5a2d00', imgPosition: 'top center' },
     ];
 
     // Carousel State
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const carouselImages = [
-        '/assets/carousel-image-1.jpg',
-        '/assets/carousel-image-2.jpg',
-        '/assets/carousel-image-3.jpg',
-        '/assets/carousel-image-4.jpg'
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/carousel-image-1_ppo0vc',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/carousel-image-2_a0xkww',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/carousel-image-3_yaeclz',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/carousel-image-4_dliwfv'
     ];
 
     // Auto-advance Carousel
@@ -54,18 +54,18 @@ function Home() {
     // Gallery State (gallery-bg.png section)
     const [galleryIndex, setGalleryIndex] = useState(0);
     const galleryImages = [
-        '/assets/gallery pictures/g1.jpeg',
-        '/assets/gallery pictures/g2.jpeg',
-        '/assets/gallery pictures/g3.jpeg',
-        '/assets/gallery pictures/g4.jpeg',
-        '/assets/gallery pictures/g5.jpeg',
-        '/assets/gallery pictures/g6.jpeg',
-        '/assets/gallery pictures/g7.jpeg',
-        '/assets/gallery pictures/g8.jpeg',
-        '/assets/gallery pictures/g9.jpeg',
-        '/assets/gallery pictures/g10.jpeg',
-        '/assets/gallery pictures/g11.jpeg',
-        '/assets/gallery pictures/g12.jpeg'
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g1_rqdbko',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g2_tv0r5r',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g3_i9iw5f',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g4_ngrxtv',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g5_fdymth',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g6_t1vfhn',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g7_asqdyf',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g8_nkbis3',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g9_uymbrv',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g10_fd9puj',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g11_q1zydu',
+        'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/g12_ndcxk3'
     ];
 
     useEffect(() => {
@@ -119,7 +119,7 @@ function Home() {
 
                 <div className="about-image">
                     <div className="pirate-manga-panel">
-                        <img src="/assets/luffy thumbs up.png" alt="Luffy Thumbs Up" />
+                        <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/luffy_thumbs_up_uqxtnq" alt="Luffy Thumbs Up" />
                         <div className="panel-caption">Setting sail on the digital Grand Line</div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@ function Home() {
                 </div>
 
                 <div className="description-container" style={{ maxWidth: '800px', marginTop: 'calc(4rem - 20px)' }}>
-                    <img src="/assets/description.png" alt="Hackathon Description Details" className="description-img" loading="lazy" decoding="async" />
+                    <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/description_no8zhs" alt="Hackathon Description Details" className="description-img" loading="lazy" decoding="async" />
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1.5rem' }}>
                         <Link
                             to="/register"
@@ -161,7 +161,7 @@ function Home() {
                             onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
                         >
                             <div style={{ border: '2px solid #1e40af', padding: '0.2rem', borderRadius: '4px', backgroundColor: '#ffffff' }}>
-                                <img src="/assets/register.png" alt="Register Now" style={{ width: '100%', maxWidth: '350px', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
+                                <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/register_jmkwc7" alt="Register Now" style={{ width: '100%', maxWidth: '350px', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
                             </div>
                         </Link>
                     </div>
@@ -171,7 +171,7 @@ function Home() {
             {/* home-artwork-bg.jpg Page Layout Section */}
             <section style={{ width: '100%', backgroundColor: '#0f172a', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
                 <div className="thematic-bg-container" style={{ width: '100%', position: 'relative' }}>
-                    <img src="/assets/home-artwork-bg.jpg" alt="One Piece Artwork" className="thematic-bg-img" loading="lazy" decoding="async" />
+                    <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/home-artwork-bg_ejs7y0" alt="One Piece Artwork" className="thematic-bg-img" loading="lazy" decoding="async" />
                     {/* Top Fade Transition */}
                     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '200px', background: 'linear-gradient(180deg, rgba(31,34,40,1) 0%, rgba(31,34,40,0) 100%)' }}></div>
                     {/* Subtle Red Thematic Overlay */}
@@ -261,8 +261,8 @@ function Home() {
             {/* Event Details Section */}
             <section className="event-details-section">
                 <div className="event-details-bg">
-                    <img src="/assets/going-merry-bg.jpeg" alt="Going Merry Ship" className="event-details-ship event-ship-desktop" loading="lazy" decoding="async" />
-                    <img src="/assets/mobile3.png" alt="Going Merry Ship Mobile" className="event-details-ship event-ship-mobile" loading="lazy" decoding="async" />
+                    <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/going-merry-bg_xga6uh" alt="Going Merry Ship" className="event-details-ship event-ship-desktop" loading="lazy" decoding="async" />
+                    <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/mobile3_atuahk" alt="Going Merry Ship Mobile" className="event-details-ship event-ship-mobile" loading="lazy" decoding="async" />
                     {/* Top fade — blends from dark above */}
                     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '180px', background: 'linear-gradient(to bottom, rgba(21,24,28,1) 0%, transparent 100%)', zIndex: 5, pointerEvents: 'none' }}></div>
                     {/* Bottom fade — blends into bright-bg.png section */}
@@ -273,42 +273,42 @@ function Home() {
                     {/* Desktop Cards - PNG images with text */}
                     <div className="event-cards-grid desktop-cards">
                         <div className="event-card-wrapper card-luffy">
-                            <img src="/assets/cards/luffy.png" alt="Format Card" className="event-card-img" loading="lazy" decoding="async" />
+                            <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/luffy_dujdzd" alt="Format Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">FORMAT</span>
                                 <span className="event-card-value">24 Hours · Offline — On Campus</span>
                             </div>
                         </div>
                         <div className="event-card-wrapper card-zoro">
-                            <img src="/assets/cards/zoro.png" alt="Team Size Card" className="event-card-img" loading="lazy" decoding="async" />
+                            <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/zoro_gpuj1x" alt="Team Size Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">TEAM SIZE</span>
                                 <span className="event-card-value">2 – 4 Members</span>
                             </div>
                         </div>
                         <div className="event-card-wrapper card-nami">
-                            <img src="/assets/cards/nami.png" alt="Eligibility Card" className="event-card-img" loading="lazy" decoding="async" />
+                            <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/nami_rgnnc8" alt="Eligibility Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">ELIGIBILITY</span>
                                 <span className="event-card-value">University Students</span>
                             </div>
                         </div>
                         <div className="event-card-wrapper card-sanji">
-                            <img src="/assets/cards/sanji.png" alt="Venue Card" className="event-card-img" loading="lazy" decoding="async" />
+                            <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/sanji_nz3t1k" alt="Venue Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">VENUE</span>
                                 <span className="event-card-value">Graphic Era Hill University<br />Dehradun</span>
                             </div>
                         </div>
                         <div className="event-card-wrapper card-ussop">
-                            <img src="/assets/cards/ussop.png" alt="Max Registrations Card" className="event-card-img" loading="lazy" decoding="async" />
+                            <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/ussop_qhtzrg" alt="Max Registrations Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">MAX REGISTRATIONS</span>
                                 <span className="event-card-value">250 Teams</span>
                             </div>
                         </div>
                         <div className="event-card-wrapper card-chopper">
-                            <img src="/assets/cards/chopper (2).png" alt="Finale Entries Card" className="event-card-img" loading="lazy" decoding="async" />
+                            <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/chopper_2_zaomg4" alt="Finale Entries Card" className="event-card-img" loading="lazy" decoding="async" />
                             <div className="event-card-text">
                                 <span className="event-card-label">FINALE ENTRIES</span>
                                 <span className="event-card-value">110 / 250</span>
@@ -436,7 +436,7 @@ function Home() {
                 {/* Background image + glass overlay — absolute behind everything */}
                 <picture className="nikka-bg-picture">
                     <source media="(max-width: 900px)" srcSet="/assets/mobile%20nikka.png" />
-                    <img src="/assets/nikka.jpeg" alt="" aria-hidden="true" className="nikka-bg-img" loading="lazy" decoding="async" />
+                    <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/nikka_t8uh2s" alt="" aria-hidden="true" className="nikka-bg-img" loading="lazy" decoding="async" />
                 </picture>
                 <div className="nikka-bg-overlay"></div>
 
@@ -484,44 +484,44 @@ function Home() {
             {/* ===== Manga Panel Mosaic Scroller ===== */}
             {(() => {
                 const row1 = [
-                    '/assets/MangaPanels/Luffy.jpg',
-                    '/assets/MangaPanels/one piece manga.jpg',
-                    '/assets/MangaPanels/download.jpg',
-                    '/assets/MangaPanels/download (1).jpg',
-                    '/assets/MangaPanels/download (2).jpg',
-                    '/assets/MangaPanels/download (3).jpg',
-                    '/assets/MangaPanels/download (4).jpg',
-                    '/assets/MangaPanels/26ff1d71915a78bd30b6d9b24bb6c994.jpg',
-                    '/assets/MangaPanels/gear2.webp',
-                    '/assets/MangaPanels/50d48b2918f1cb1459bd32c7a9666ede.webp',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Luffy_r9gnrp',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/one_piece_manga_vjriqt',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_nausq0',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_1_fdhski',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_2_xj5egc',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_3_rigbuy',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_4_lqf4my',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/26ff1d71915a78bd30b6d9b24bb6c994_rdj2ko',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/gear2_i30q7e',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/50d48b2918f1cb1459bd32c7a9666ede_vw9chb',
                     '/assets/MangaPanels/82ff9dc98dcd492fd7024f808d6f6436.webp',
                 ];
                 const row2 = [
-                    '/assets/MangaPanels/download (5).jpg',
-                    '/assets/MangaPanels/download (6).jpg',
-                    '/assets/MangaPanels/download (7).jpg',
-                    '/assets/MangaPanels/download (8).jpg',
-                    '/assets/MangaPanels/download (9).jpg',
-                    '/assets/MangaPanels/download (10).jpg',
-                    '/assets/MangaPanels/p1.jpg',
-                    '/assets/MangaPanels/one piece- monkey d_ luffy.jpg',
-                    '/assets/MangaPanels/f0c83cbbb913934694c5990734c6e0a9.webp',
-                    '/assets/MangaPanels/loki_first_appearance.webp',
-                    '/assets/MangaPanels/luffy_gear_5.webp',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_5_q7d3s9',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_6_e9bohg',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_7_jrp2n2',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_8_bp7wwn',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_9_dprw6p',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_10_qqthhc',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/p1_abdoxf',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/one_piece-_monkey_d__luffy_mpcacs',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/f0c83cbbb913934694c5990734c6e0a9_lxlyj8',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/loki_first_appearance_oxqxqu',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/luffy_gear_5_brblaj',
                 ];
                 const row3 = [
-                    '/assets/MangaPanels/download (11).jpg',
-                    '/assets/MangaPanels/download (12).jpg',
-                    '/assets/MangaPanels/download (13).jpg',
-                    '/assets/MangaPanels/download (14).jpg',
-                    '/assets/MangaPanels/onepiece __ manga __ story __ nakama __ pirates __ anime __ king of pirates __ story __ chapter __.jpg',
-                    '/assets/MangaPanels/★.jpg',
-                    '/assets/MangaPanels/Screenshot 2026-03-02 162330.png',
-                    '/assets/MangaPanels/Screenshot 2026-03-02 163205.png',
-                    '/assets/MangaPanels/whats-your-favorite-one-piece-manga-panel-v0-pfvg890ojfbf1.webp',
-                    '/assets/MangaPanels/whitebeard_vs_marine.webp',
-                    '/assets/MangaPanels/wp11456620.webp',
-                    '/assets/MangaPanels/drop-the-coolest-looking-op-manga-panel-artistically-v0-r37rr45eee4f1.webp',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_11_ke2kiw',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_12_dxouex',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_13_kkr3cp',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/download_14_iyd31s',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/onepiece____manga____story____nakama____pirates____anime____king_of_pirates____story____chapter____sshzt0',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/bipskiug3v4n4rwhjewl',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Screenshot_2026-03-02_162330_isyoxw',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Screenshot_2026-03-02_163205_x10huk',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/whats-your-favorite-one-piece-manga-panel-v0-pfvg890ojfbf1_d00slq',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/whitebeard_vs_marine_qg4ofl',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/wp11456620_syoitc',
+                    'https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/drop-the-coolest-looking-op-manga-panel-artistically-v0-r37rr45eee4f1_qte4wn',
                 ];
 
                 return (
@@ -530,8 +530,8 @@ function Home() {
                         <section id="gallery" className="nikka-section-wrapper" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '12rem 1rem 4rem 1rem' }}>
                             {/* Background image + glass overlay — absolute behind everything */}
                             <picture className="nikka-bg-picture">
-                                <source media="(max-width: 900px)" srcSet="/assets/gallery-bg.png" />
-                                <img src="/assets/gallery-bg.png" alt="" aria-hidden="true" className="nikka-bg-img" style={{ objectPosition: 'center -100px' }} loading="lazy" decoding="async" />
+                                <source media="(max-width: 900px)" srcSet="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/gallery-bg_zxkxho" />
+                                <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/gallery-bg_zxkxho" alt="" aria-hidden="true" className="nikka-bg-img" style={{ objectPosition: 'center -100px' }} loading="lazy" decoding="async" />
                             </picture>
 
                             {/* Smooth top fade transition bridging from the previous section into gallery-bg.png */}
@@ -640,7 +640,7 @@ function Home() {
 
                             {/* Luffy peeking from the right middle */}
                             <img
-                                src="/assets/luffy_peeking.png"
+                                src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/luffy_peeking_vuvq7k"
                                 alt="Luffy Peeking"
                                 className="luffy-faq-peek"
                                 style={{
@@ -662,7 +662,7 @@ function Home() {
                                 <div className="manga-mosaicui">
                                     {/* Row 1: skull icon + text */}
                                     <div className="manga-mosaicui-row1" style={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                                        <img src="/assets/strawhat skull.png" alt="Strawhat Skull" className="manga-skull" style={{ marginBottom: '1rem' }} loading="lazy" decoding="async" />
+                                        <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/strawhat_skull_aegbju" alt="Strawhat Skull" className="manga-skull" style={{ marginBottom: '1rem' }} loading="lazy" decoding="async" />
                                         <span style={{ fontSize: '2.5rem', fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '4px', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>ONE PIECE</span>
                                         <div className="manga-mosaic-text-wrapper" style={{ marginTop: '0.5rem' }}>
                                             <p className='manga-mosaicui-desc' style={{ textAlign: 'center' }}>want to join the exciting adventure with us</p>
@@ -672,7 +672,7 @@ function Home() {
                                     {/* Row 2: register button, centered */}
                                     <div className="manga-mosaicui-row2">
                                         <Link to="/register" className='manga-mosaicui-btn' style={{ textDecoration: 'none' }}>
-                                            <img src="/assets/luffy hat.png" alt="Luffy Hat" style={{ background: 'transparent' }} />
+                                            <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/luffy_hat_fjp7ze" alt="Luffy Hat" style={{ background: 'transparent' }} />
                                             <span>Register Now</span>
                                             <i>&gt;</i>
                                         </Link>

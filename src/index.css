@@ -204,7 +204,7 @@ button {
 }
 
 .bg-home {
-  background-image: url('/assets/luffy second.png');
+  background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/luffy_second_st1o4n');
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
@@ -213,7 +213,7 @@ button {
 }
 
 .bg-about {
-  background-image: url('/assets/bright-bg.png');
+  background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/bright-bg_xocrgu');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -222,7 +222,7 @@ button {
 }
 
 .bg-leaderboard {
-  background-image: url('/assets/leaderboard.png');
+  background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/leaderboard_mvqxyg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -269,7 +269,7 @@ button {
 }
 
 .bg-developers {
-  background-image: url('/assets/marinefold.jpg');
+  background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/marinefold_ebhqfu');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1131,7 +1131,7 @@ button {
 
 @media (max-width: 900px) {
   .thematic-bg-container {
-    background-image: url('/assets/mobile2.png');
+    background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/mobile2_ayqgi3');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1413,11 +1413,11 @@ button {
 
 /* Event Flow Section Backgrounds */
 .new-section-4 {
-  background-image: url('/assets/bright-bg.png');
+  background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/bright-bg_xocrgu');
 }
 
 .new-section-6 {
-  background-image: url('/assets/gallery-bg.png');
+  background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/gallery-bg_zxkxho');
 }
 
 /* Event Flow Timelines */
@@ -1541,7 +1541,7 @@ button {
 
 @media (max-width: 900px) {
   .new-section-4 {
-    background-image: url('/assets/mobile-bright-bg.png');
+    background-image: url('https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/mobile-bright-bg_l7oays');
   }
 
   .event-flow-wrapper {

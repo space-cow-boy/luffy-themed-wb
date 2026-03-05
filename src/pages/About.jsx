@@ -8,19 +8,19 @@ const guides = [
         name: "Prof. (Dr.) Amit R. Bhatt",
         title: "Vice Chancellor, GEHU Dehradun",
         desc: "An inspiring academic visionary and seasoned leader, driving innovation and excellence at the helm of Graphic Era Hill University.",
-        img: "/assets/Prof-Dr-Amit-R-BhattVice-Chancellor-Graphic-Era-Hill-University.jpg"
+        img: "https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Prof-Dr-Amit-R-BhattVice-Chancellor-Graphic-Era-Hill-University_d4hme8"
     },
     {
         name: "Dr. Anupam Singh",
         title: "HOD, Department of Computer Science and Engineering, GEHU Dehradun",
         desc: "A dedicated academic and departmental leader, committed to fostering growth, learning, and innovation within the institution.",
-        img: "/assets/HOD_sir.png"
+        img: "https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/HOD_sir_ydutnv"
     },
     {
         name: "Mr. Sushant Chamoli",
         title: "Assistant Professor, GEHU",
         desc: "A supportive mentor and guiding force behind the club's growth, encouraging student innovation and teamwork.",
-        img: "/assets/Sushant_sir.jpg"
+        img: "https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/Sushant_sir_gttxf7"
     }
 ];
 
@@ -158,7 +158,7 @@ function About() {
                         <h2 className="ap-section-title text-center">Our Story</h2>
                         <div className="ap-story-container">
                             <div className="ap-story-image">
-                                <img src="/assets/winner.jpg" alt="Our Story" loading="lazy" decoding="async" />
+                                <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/winner_bvlfl8" alt="Our Story" loading="lazy" decoding="async" />
                             </div>
                             <div className="ap-story-text">
                                 <p>Hack-O-Holic began in 2023 as a small, campus-based event with just 50 participants. The enthusiasm and innovation demonstrated during that first event inspired us to expand our vision and reach.</p>

@@ -79,7 +79,7 @@ const Leaderboard = () => {
                 width: '100%',
                 minHeight: '100vh',
                 zIndex: 99,
-                backgroundImage: `url('${isMobile ? "/assets/chopper mobile.png" : "/assets/chopper desktop.png"}')`,
+                backgroundImage: `url('${isMobile ? "https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/chopper_mobile_xmfbph" : "https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/chopper_desktop_nwc9or"}')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 overflow: 'hidden'
