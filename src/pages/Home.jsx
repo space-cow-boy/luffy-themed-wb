@@ -123,68 +123,70 @@ function Home() {
 
     return (
         <>
-            {/* Intro Section */}
-            <section id="home" className="about-section slide-up" style={{ marginTop: '2rem' }}>
-                <div className="about-text" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)', minWidth: 0 }}>
-                    <h1 className="about-title" style={{ fontSize: 'clamp(3rem, 6vw, 5rem)', color: '#ffffff', marginBottom: '0', wordBreak: 'break-word', lineHeight: '1.1' }}>HACK-<span className="op-font">O</span>-HOLIC 4.0</h1>
-                    <h2 className="about-title-secondary" style={{ fontSize: 'clamp(2.2rem, 4.5vw, 4rem)', color: '#ffffff', borderBottom: 'none', paddingBottom: 0, wordBreak: 'break-word' }}>P<span className="op-font">I</span>RATE K<span className="op-font">I</span>NG'S CHALLENGE</h2>
+            <div className="mobile-hero-bg">
+                {/* Intro Section */}
+                <section id="home" className="about-section slide-up" style={{ marginTop: '2rem' }}>
+                    <div className="about-text" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)', minWidth: 0 }}>
+                        <h1 className="about-title" style={{ fontSize: 'clamp(3rem, 6vw, 5rem)', color: '#ffffff', marginBottom: '0', wordBreak: 'break-word', lineHeight: '1.1' }}>HACK-<span className="op-font">O</span>-HOLIC 4.0</h1>
+                        <h2 className="about-title-secondary" style={{ fontSize: 'clamp(2.2rem, 4.5vw, 4rem)', color: '#ffffff', borderBottom: 'none', paddingBottom: 0, wordBreak: 'break-word' }}>P<span className="op-font">I</span>RATE K<span className="op-font">I</span>NG'S CHALLENGE</h2>
 
-                    <p className="about-desc" style={{ fontSize: '1.5rem', color: '#e2e8f0', marginTop: '1.5rem' }}>
-                        Set Sail for the Ultimate One Piece Themed Hackathon!<br />
-                        Code, Create, and Conquer!
-                    </p>
-                </div>
+                        <p className="about-desc" style={{ fontSize: '1.5rem', color: '#e2e8f0', marginTop: '1.5rem' }}>
+                            Set Sail for the Ultimate One Piece Themed Hackathon!<br />
+                            Code, Create, and Conquer!
+                        </p>
+                    </div>
 
-                <div className="about-image">
-                    <div className="pirate-manga-panel">
-                        <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/luffy_thumbs_up_uqxtnq" alt="Luffy Thumbs Up" />
-                        <div className="panel-caption">Setting sail on the digital Grand Line</div>
+                    <div className="about-image">
+                        <div className="pirate-manga-panel">
+                            <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/luffy_thumbs_up_uqxtnq" alt="Luffy Thumbs Up" />
+                            <div className="panel-caption">Setting sail on the digital Grand Line</div>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            {/* Countdown & Description Section */}
-            <section id="mission" className="countdown-section">
-                <h2 className="about-title" style={{ fontSize: '4rem', color: '#ffffff', marginBottom: '2rem', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>CHALLENGE BEGINS IN:</h2>
+                {/* Countdown & Description Section */}
+                <section id="mission" className="countdown-section">
+                    <h2 className="about-title" style={{ fontSize: '4rem', color: '#ffffff', marginBottom: '2rem', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>CHALLENGE BEGINS IN:</h2>
 
-                <div className="custom-countdown-container" style={{ flexWrap: 'nowrap', overflowX: 'auto' }}>
-                    <div className="countdown-box">
-                        <span className="box-digit">{timeLeft.days}</span>
-                        <span className="box-label">DAYS</span>
+                    <div className="custom-countdown-container" style={{ flexWrap: 'nowrap', overflowX: 'auto' }}>
+                        <div className="countdown-box">
+                            <span className="box-digit">{timeLeft.days}</span>
+                            <span className="box-label">DAYS</span>
+                        </div>
+                        <span className="countdown-colon">:</span>
+                        <div className="countdown-box">
+                            <span className="box-digit">{timeLeft.hours}</span>
+                            <span className="box-label">HOURS</span>
+                        </div>
+                        <span className="countdown-colon">:</span>
+                        <div className="countdown-box">
+                            <span className="box-digit">{timeLeft.minutes}</span>
+                            <span className="box-label">MINUTES</span>
+                        </div>
+                        <span className="countdown-colon">:</span>
+                        <div className="countdown-box">
+                            <span className="box-digit">{timeLeft.seconds}</span>
+                            <span className="box-label">SECONDS</span>
+                        </div>
                     </div>
-                    <span className="countdown-colon">:</span>
-                    <div className="countdown-box">
-                        <span className="box-digit">{timeLeft.hours}</span>
-                        <span className="box-label">HOURS</span>
-                    </div>
-                    <span className="countdown-colon">:</span>
-                    <div className="countdown-box">
-                        <span className="box-digit">{timeLeft.minutes}</span>
-                        <span className="box-label">MINUTES</span>
-                    </div>
-                    <span className="countdown-colon">:</span>
-                    <div className="countdown-box">
-                        <span className="box-digit">{timeLeft.seconds}</span>
-                        <span className="box-label">SECONDS</span>
-                    </div>
-                </div>
 
-                <div className="description-container" style={{ maxWidth: '800px', marginTop: 'calc(4rem - 20px)' }}>
-                    <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/description_no8zhs" alt="Hackathon Description Details" className="description-img" loading="lazy" decoding="async" />
-                    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1.5rem' }}>
-                        <Link
-                            to="/register"
-                            style={{ display: 'inline-block', transition: 'transform 0.3s ease', cursor: 'pointer', backgroundColor: '#ffffff', padding: '0.4rem', borderRadius: '8px', textDecoration: 'none' }}
-                            onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-                            onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                        >
-                            <div style={{ border: '2px solid #1e40af', padding: '0.2rem', borderRadius: '4px', backgroundColor: '#ffffff' }}>
-                                <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/register_jmkwc7" alt="Register Now" style={{ width: '100%', maxWidth: '350px', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
-                            </div>
-                        </Link>
+                    <div className="description-container" style={{ maxWidth: '800px', marginTop: 'calc(4rem - 20px)' }}>
+                        <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/description_no8zhs" alt="Hackathon Description Details" className="description-img" loading="lazy" decoding="async" />
+                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1.5rem' }}>
+                            <Link
+                                to="/register"
+                                style={{ display: 'inline-block', transition: 'transform 0.3s ease', cursor: 'pointer', backgroundColor: '#ffffff', padding: '0.4rem', borderRadius: '8px', textDecoration: 'none' }}
+                                onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                                onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                            >
+                                <div style={{ border: '2px solid #1e40af', padding: '0.2rem', borderRadius: '4px', backgroundColor: '#ffffff' }}>
+                                    <img src="https://res.cloudinary.com/dmajc7wkx/image/upload/q_auto,f_auto/register_jmkwc7" alt="Register Now" style={{ width: '100%', maxWidth: '350px', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
+                                </div>
+                            </Link>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             {/* home-artwork-bg.jpg Page Layout Section */}
             <section style={{ width: '100%', backgroundColor: '#0f172a', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
