@@ -99,6 +99,7 @@ const Leaderboard = () => {
         return (
             <div style={{
                 position: 'relative',
+                marginTop: '-100px',
                 width: '100%',
                 minHeight: '100vh',
                 zIndex: 1,
@@ -109,7 +110,7 @@ const Leaderboard = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                paddingTop: '80px' // Space for navbar
+                paddingTop: '100px' // Space relative to the pushed margin to clear navbar safely
             }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.6)', zIndex: 0 }}></div>
                 <div style={{
